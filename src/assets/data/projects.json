@@ -1,0 +1,86 @@
+[
+  {
+    "id": "igot",
+    "title": "iGOT / Karmayogi Bharat",
+    "featured": true,
+    "period": "2020 — Present",
+    "description": {
+      "en": "National-scale government learning platform serving a 1.5M+ and growing userbase. Modular Angular frontend, Node.js middleware, Dockerized microservices on GCP — now extended with a high-throughput telemetry and streaming data layer.",
+      "hi": "1.5M+ और बढ़ते उपयोगकर्ता आधार की सेवा करने वाला राष्ट्रीय स्तर का सरकारी लर्निंग प्लेटफ़ॉर्म। मॉड्यूलर Angular फ्रंटएंड, Node.js मिडलवेयर, GCP पर डॉकराइज़्ड माइक्रोसर्विसेज़ — अब उच्च-थ्रूपुट टेलीमेट्री और स्ट्रीमिंग डेटा परत के साथ विस्तारित।",
+      "kn": "1.5M+ ಮತ್ತು ಬೆಳೆಯುತ್ತಿರುವ ಬಳಕೆದಾರ ನೆಲೆಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ ರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದ ಸರ್ಕಾರಿ ಕಲಿಕಾ ವೇದಿಕೆ. ಮಾಡ್ಯುಲರ್ Angular ಫ್ರಂಟೆಂಡ್, Node.js ಮಿಡಲ್‌ವೇರ್, GCP ನಲ್ಲಿ ಡಾಕರೈಸ್ಡ್ ಮೈಕ್ರೋಸರ್ವಿಸ್‌ಗಳು — ಈಗ ಹೈ-ಥ್ರೋಪುಟ್ ಟೆಲಿಮೆಟ್ರಿ ಮತ್ತು ಸ್ಟ್ರೀಮಿಂಗ್ ಡೇಟಾ ಪದರದೊಂದಿಗೆ ವಿಸ್ತರಿಸಲಾಗಿದೆ."
+    },
+    "tech": ["Angular", "Node.js", "Kafka", "Flink", "Druid", "PySpark", "Docker", "GCP"],
+    "repo": "",
+    "live": "https://igot.gov.in"
+  },
+  {
+    "id": "sunbird",
+    "title": "Ekstep — Sunbird",
+    "featured": true,
+    "period": "2018 — Present",
+    "description": {
+      "en": "Ionic-Angular hybrid apps for teachers and students with real-time content updates, RxJS-driven state, and API-based content delivery. Documented and helped optimize the Sunbird telemetry pipeline.",
+      "hi": "रीयल-टाइम कंटेंट अपडेट, RxJS-संचालित स्टेट और API-आधारित कंटेंट डिलीवरी के साथ शिक्षकों और छात्रों के लिए Ionic-Angular हाइब्रिड ऐप्स। Sunbird टेलीमेट्री पाइपलाइन का दस्तावेज़ीकरण और अनुकूलन।",
+      "kn": "ರಿಯಲ್-ಟೈಮ್ ವಿಷಯ ನವೀಕರಣ, RxJS-ಚಾಲಿತ ಸ್ಟೇಟ್ ಮತ್ತು API-ಆಧಾರಿತ ವಿಷಯ ವಿತರಣೆಯೊಂದಿಗೆ ಶಿಕ್ಷಕರು ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ Ionic-Angular ಹೈಬ್ರಿಡ್ ಆಪ್‌ಗಳು. Sunbird ಟೆಲಿಮೆಟ್ರಿ ಪೈಪ್‌ಲೈನ್ ದಾಖಲೀಕರಣ ಮತ್ತು ಆಪ್ಟಿಮೈಸೇಶನ್."
+    },
+    "tech": ["Ionic", "Angular", "RxJS", "Kafka"],
+    "repo": "https://github.com/sunbird-knowlg",
+    "live": ""
+  },
+  {
+    "id": "matchedin",
+    "title": "MatchedIn",
+    "featured": false,
+    "period": "2018",
+    "description": {
+      "en": "Angular front-end with SASS and build optimisations; owned client communication and UI delivery end to end.",
+      "hi": "SASS और बिल्ड अनुकूलन के साथ Angular फ्रंट-एंड; क्लाइंट संचार और UI डिलीवरी का स्वामित्व।",
+      "kn": "SASS ಮತ್ತು ಬಿಲ್ಡ್ ಆಪ್ಟಿಮೈಸೇಶನ್‌ಗಳೊಂದಿಗೆ Angular ಫ್ರಂಟ್-ಎಂಡ್; ಕ್ಲೈಂಟ್ ಸಂವಹನ ಮತ್ತು UI ವಿತರಣೆಯ ಮಾಲೀಕತ್ವ."
+    },
+    "tech": ["Angular", "SASS"],
+    "repo": "",
+    "live": ""
+  },
+  {
+    "id": "halo-phmt",
+    "title": "HALO — PHMT",
+    "featured": false,
+    "period": "2017 — 2018",
+    "description": {
+      "en": "Patient survey module in Angular with interactive canvas features and dynamic organisation onboarding.",
+      "hi": "इंटरैक्टिव कैनवास सुविधाओं और गतिशील संगठन ऑनबोर्डिंग के साथ Angular में रोगी सर्वेक्षण मॉड्यूल।",
+      "kn": "ಇಂಟರ್‌ಆಕ್ಟಿವ್ ಕ್ಯಾನ್ವಾಸ್ ವೈಶಿಷ್ಟ್ಯಗಳು ಮತ್ತು ಡೈನಾಮಿಕ್ ಸಂಸ್ಥೆ ಆನ್‌ಬೋರ್ಡಿಂಗ್‌ನೊಂದಿಗೆ Angular ನಲ್ಲಿ ರೋಗಿ ಸಮೀಕ್ಷೆ ಮಾಡ್ಯೂಲ್."
+    },
+    "tech": ["Angular", "Canvas"],
+    "repo": "",
+    "live": ""
+  },
+  {
+    "id": "talx",
+    "title": "Talx by Durex",
+    "featured": false,
+    "period": "2017",
+    "description": {
+      "en": "Responsive Umbraco CMS web app integrated with Salesforce chat for anonymous health consultations.",
+      "hi": "गुमनाम स्वास्थ्य परामर्श के लिए Salesforce चैट के साथ एकीकृत उत्तरदायी Umbraco CMS वेब ऐप।",
+      "kn": "ಅನಾಮಧೇಯ ಆರೋಗ್ಯ ಸಮಾಲೋಚನೆಗಳಿಗಾಗಿ Salesforce ಚಾಟ್‌ನೊಂದಿಗೆ ಸಂಯೋಜಿತ ಸ್ಪಂದನಶೀಲ Umbraco CMS ವೆಬ್ ಆಪ್."
+    },
+    "tech": ["Umbraco", "Salesforce", "JavaScript"],
+    "repo": "",
+    "live": ""
+  },
+  {
+    "id": "early-work",
+    "title": "Viomba · Actsec · Inbrix · Lithium · Kronos",
+    "featured": false,
+    "period": "2015 — 2017",
+    "description": {
+      "en": "AngularJS analytics portals, multi-tenant asset dashboards, location-based survey tools, live fleet-tracking UIs, and an internal time-tracking system — many with Google Maps integration.",
+      "hi": "AngularJS एनालिटिक्स पोर्टल, मल्टी-टेनेंट एसेट डैशबोर्ड, स्थान-आधारित सर्वेक्षण उपकरण, लाइव फ्लीट-ट्रैकिंग UI, और एक आंतरिक समय-ट्रैकिंग प्रणाली — कई Google Maps एकीकरण के साथ।",
+      "kn": "AngularJS ಅನಾಲಿಟಿಕ್ಸ್ ಪೋರ್ಟಲ್‌ಗಳು, ಮಲ್ಟಿ-ಟೆನೆಂಟ್ ಆಸ್ತಿ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗಳು, ಸ್ಥಳ-ಆಧಾರಿತ ಸಮೀಕ್ಷೆ ಸಾಧನಗಳು, ಲೈವ್ ಫ್ಲೀಟ್-ಟ್ರ್ಯಾಕಿಂಗ್ UI ಗಳು ಮತ್ತು ಆಂತರಿಕ ಸಮಯ-ಟ್ರ್ಯಾಕಿಂಗ್ ವ್ಯವಸ್ಥೆ — ಹಲವು Google Maps ಏಕೀಕರಣದೊಂದಿಗೆ."
+    },
+    "tech": ["AngularJS", "Google Maps API"],
+    "repo": "",
+    "live": ""
+  }
+]

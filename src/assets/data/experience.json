@@ -1,0 +1,72 @@
+[
+  {
+    "id": "tarento-aa",
+    "role": {
+      "en": "Associate Architect",
+      "hi": "एसोसिएट आर्किटेक्ट",
+      "kn": "ಅಸೋಸಿಯೇಟ್ ಆರ್ಕಿಟೆಕ್ಟ್"
+    },
+    "company": "Tarento Technologies Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "2024 — Present",
+    "current": true,
+    "summary": {
+      "en": "Promoted from Technology Lead to Associate Architect. Recently transitioned, by choice, from the Angular UI team into Data Engineering.",
+      "hi": "टेक्नोलॉजी लीड से एसोसिएट आर्किटेक्ट के रूप में पदोन्नत। हाल ही में स्वेच्छा से Angular UI टीम से डेटा इंजीनियरिंग में स्थानांतरित।",
+      "kn": "ಟೆಕ್ನಾಲಜಿ ಲೀಡ್‌ನಿಂದ ಅಸೋಸಿಯೇಟ್ ಆರ್ಕಿಟೆಕ್ಟ್‌ಗೆ ಬಡ್ತಿ. ಇತ್ತೀಚೆಗೆ ಸ್ವ-ಇಚ್ಛೆಯಿಂದ Angular UI ತಂಡದಿಂದ ಡೇಟಾ ಎಂಜಿನಿಯರಿಂಗ್‌ಗೆ ಬದಲಾವಣೆ."
+    },
+    "highlights": [
+      {
+        "en": "Designing and optimizing high-throughput streaming data pipelines with **Kafka, Flink, Druid, and PySpark**.",
+        "hi": "**Kafka, Flink, Druid और PySpark** के साथ उच्च-थ्रूपुट स्ट्रीमिंग डेटा पाइपलाइनों का डिज़ाइन और अनुकूलन।",
+        "kn": "**Kafka, Flink, Druid ಮತ್ತು PySpark** ಬಳಸಿ ಹೈ-ಥ್ರೋಪುಟ್ ಸ್ಟ್ರೀಮಿಂಗ್ ಡೇಟಾ ಪೈಪ್‌ಲೈನ್‌ಗಳ ವಿನ್ಯಾಸ ಮತ್ತು ಆಪ್ಟಿಮೈಸೇಶನ್."
+      },
+      {
+        "en": "Owning cross-team architecture and engineering quality across **frontend and data** layers.",
+        "hi": "**फ्रंटएंड और डेटा** परतों में क्रॉस-टीम आर्किटेक्चर और इंजीनियरिंग गुणवत्ता का स्वामित्व।",
+        "kn": "**ಫ್ರಂಟೆಂಡ್ ಮತ್ತು ಡೇಟಾ** ಪದರಗಳಲ್ಲಿ ಕ್ರಾಸ್-ತಂಡ ಆರ್ಕಿಟೆಕ್ಚರ್ ಮತ್ತು ಇಂಜಿನಿಯರಿಂಗ್ ಗುಣಮಟ್ಟದ ಮಾಲೀಕತ್ವ."
+      },
+      {
+        "en": "Embedded **AI-assisted workflows (Claude, GitHub Copilot)** into daily development, automation, and documentation.",
+        "hi": "दैनिक विकास, स्वचालन और दस्तावेज़ीकरण में **AI-सहायता प्राप्त वर्कफ़्लो (Claude, GitHub Copilot)** को शामिल किया।",
+        "kn": "ದೈನಂದಿನ ಅಭಿವೃದ್ಧಿ, ಆಟೊಮೇಶನ್ ಮತ್ತು ದಾಖಲೆಗಳಲ್ಲಿ **AI-ಸಹಾಯಿತ ವರ್ಕ್‌ಫ್ಲೋಗಳು (Claude, GitHub Copilot)** ಅಳವಡಿಕೆ."
+      }
+    ],
+    "tech": ["Kafka", "Flink", "Druid", "PySpark", "Angular", "Node.js", "GCP"]
+  },
+  {
+    "id": "tarento-tl",
+    "role": {
+      "en": "Technology Lead",
+      "hi": "टेक्नोलॉजी लीड",
+      "kn": "ಟೆಕ್ನಾಲಜಿ ಲೀಡ್"
+    },
+    "company": "Tarento Technologies Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "2014 — 2024",
+    "current": false,
+    "summary": {
+      "en": "Led frontend architecture and full-stack integrations for large-scale national platforms, witnessing the company grow from ~160 to 800+ people.",
+      "hi": "बड़े पैमाने के राष्ट्रीय प्लेटफ़ॉर्म के लिए फ्रंटएंड आर्किटेक्चर और फुल-स्टैक एकीकरण का नेतृत्व किया; कंपनी को ~160 से 800+ लोगों तक बढ़ते देखा।",
+      "kn": "ದೊಡ್ಡ ಪ್ರಮಾಣದ ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಗಳಿಗಾಗಿ ಫ್ರಂಟೆಂಡ್ ಆರ್ಕಿಟೆಕ್ಚರ್ ಮತ್ತು ಫುಲ್-ಸ್ಟ್ಯಾಕ್ ಏಕೀಕರಣದ ನೇತೃತ್ವ; ಕಂಪನಿ ~160 ರಿಂದ 800+ ಜನರಿಗೆ ಬೆಳೆದದ್ದನ್ನು ಕಂಡೆ."
+    },
+    "highlights": [
+      {
+        "en": "Architected modular Angular + Node.js platforms serving a **1.5M+ and growing** national userbase.",
+        "hi": "**1.5M+ और बढ़ते** राष्ट्रीय उपयोगकर्ता आधार की सेवा करने वाले मॉड्यूलर Angular + Node.js प्लेटफ़ॉर्म का निर्माण किया।",
+        "kn": "**1.5M+ ಮತ್ತು ಬೆಳೆಯುತ್ತಿರುವ** ರಾಷ್ಟ್ರೀಯ ಬಳಕೆದಾರ ನೆಲೆಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ ಮಾಡ್ಯುಲರ್ Angular + Node.js ವೇದಿಕೆಗಳ ವಿನ್ಯಾಸ."
+      },
+      {
+        "en": "Sustained **64 TPS** in production on a high-concurrency nationwide deployment.",
+        "hi": "उच्च-समवर्ती राष्ट्रव्यापी परिनियोजन पर उत्पादन में **64 TPS** बनाए रखा।",
+        "kn": "ಹೈ-ಕನ್‌ಕರೆನ್ಸಿ ರಾಷ್ಟ್ರವ್ಯಾಪಿ ನಿಯೋಜನೆಯಲ್ಲಿ ಉತ್ಪಾದನೆಯಲ್ಲಿ **64 TPS** ನಿರ್ವಹಣೆ."
+      },
+      {
+        "en": "Mentored engineers and interns, drove code reviews, and built internal productivity tooling.",
+        "hi": "इंजीनियरों और प्रशिक्षुओं को सलाह दी, कोड समीक्षा को आगे बढ़ाया, और आंतरिक उत्पादकता टूलिंग बनाई।",
+        "kn": "ಇಂಜಿನಿಯರ್‌ಗಳಿಗೆ ಮತ್ತು ಇಂಟರ್ನ್‌ಗಳಿಗೆ ಮಾರ್ಗದರ್ಶನ, ಕೋಡ್ ರಿವ್ಯೂ ಮುನ್ನಡೆಸುವಿಕೆ, ಆಂತರಿಕ ಉತ್ಪಾದಕತಾ ಸಾಧನಗಳ ನಿರ್ಮಾಣ."
+      }
+    ],
+    "tech": ["Angular", "TypeScript", "Node.js", "Ionic", "Docker", "GCP"]
+  }
+]

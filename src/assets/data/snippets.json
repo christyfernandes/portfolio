@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ng-signals-state",
+    "title": "Tiny reactive store with Angular Signals",
+    "language": "typescript",
+    "tags": ["typescript", "angular", "signals"],
+    "summary": {
+      "en": "A zero-dependency state container using signals + computed.",
+      "hi": "signals + computed का उपयोग करते हुए शून्य-निर्भरता स्टेट कंटेनर।",
+      "kn": "signals + computed ಬಳಸಿ ಶೂನ್ಯ-ಅವಲಂಬನೆ ಸ್ಟೇಟ್ ಕಂಟೈನರ್."
+    },
+    "code": "import { signal, computed } from '@angular/core';\n\nexport function createStore<T>(initial: T) {\n  const state = signal(initial);\n  return {\n    select: <K>(fn: (s: T) => K) => computed(() => fn(state())),\n    patch: (partial: Partial<T>) =>\n      state.update((s) => ({ ...s, ...partial })),\n    snapshot: () => state(),\n  };\n}"
+  },
+  {
+    "id": "rxjs-debounce-search",
+    "title": "Debounced, race-safe search with RxJS",
+    "language": "typescript",
+    "tags": ["typescript", "rxjs", "angular"],
+    "summary": {
+      "en": "switchMap cancels stale requests so only the latest query wins.",
+      "hi": "switchMap पुराने अनुरोधों को रद्द करता है ताकि केवल नवीनतम क्वेरी जीते।",
+      "kn": "switchMap ಹಳೆಯ ವಿನಂತಿಗಳನ್ನು ರದ್ದುಗೊಳಿಸುತ್ತದೆ, ಇದರಿಂದ ಇತ್ತೀಚಿನ ಕ್ವೆರಿ ಮಾತ್ರ ಗೆಲ್ಲುತ್ತದೆ."
+    },
+    "code": "search$.pipe(\n  debounceTime(250),\n  distinctUntilChanged(),\n  switchMap((q) => this.api.search(q)),\n).subscribe((results) => this.results.set(results));"
+  },
+  {
+    "id": "kafka-consumer-lag",
+    "title": "Check Kafka consumer group lag fast",
+    "language": "bash",
+    "tags": ["kafka", "data", "bash"],
+    "summary": {
+      "en": "One command to spot a backed-up consumer group.",
+      "hi": "बैकलॉग वाले उपभोक्ता समूह को पहचानने के लिए एक कमांड।",
+      "kn": "ಬ್ಯಾಕ್‌ಲಾಗ್ ಇರುವ ಗ್ರಾಹಕ ಗುಂಪನ್ನು ಗುರುತಿಸಲು ಒಂದು ಆದೇಶ."
+    },
+    "code": "kafka-consumer-groups.sh \\\n  --bootstrap-server localhost:9092 \\\n  --describe --group telemetry-pipeline | \\\n  awk 'NR>1 {sum+=$6} END {print \"total lag:\", sum}'"
+  },
+  {
+    "id": "pyspark-dedupe",
+    "title": "Keep latest record per key in PySpark",
+    "language": "python",
+    "tags": ["pyspark", "data", "python"],
+    "summary": {
+      "en": "Window + row_number is the cleanest dedupe by event time.",
+      "hi": "इवेंट समय के अनुसार सबसे साफ़ डीडुप के लिए Window + row_number।",
+      "kn": "ಈವೆಂಟ್ ಸಮಯದ ಪ್ರಕಾರ ಶುದ್ಧ ಡೀಡೂಪ್‌ಗೆ Window + row_number."
+    },
+    "code": "from pyspark.sql import Window\nfrom pyspark.sql import functions as F\n\nw = Window.partitionBy('user_id').orderBy(F.col('ts').desc())\nlatest = (df.withColumn('rn', F.row_number().over(w))\n            .filter(F.col('rn') == 1)\n            .drop('rn'))"
+  },
+  {
+    "id": "git-undo-last-commit",
+    "title": "Undo the last commit, keep the changes",
+    "language": "bash",
+    "tags": ["git", "bash"],
+    "summary": {
+      "en": "Soft reset rewinds the commit but leaves your work staged.",
+      "hi": "Soft reset कमिट को पीछे करता है पर आपका काम staged रखता है।",
+      "kn": "Soft reset ಕಮಿಟ್ ಅನ್ನು ಹಿಂದಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ ಆದರೆ ನಿಮ್ಮ ಕೆಲಸ staged ಆಗಿ ಉಳಿಯುತ್ತದೆ."
+    },
+    "code": "git reset --soft HEAD~1\n# changes are back in the staging area, ready to recommit"
+  },
+  {
+    "id": "css-fluid-type",
+    "title": "Fluid typography without media queries",
+    "language": "css",
+    "tags": ["css", "tailwind"],
+    "summary": {
+      "en": "clamp() scales font size smoothly between two viewport bounds.",
+      "hi": "clamp() दो व्यूपोर्ट सीमाओं के बीच फ़ॉन्ट आकार को सहजता से स्केल करता है।",
+      "kn": "clamp() ಎರಡು ವ್ಯೂಪೋರ್ಟ್ ಮಿತಿಗಳ ನಡುವೆ ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ಸುಗಮವಾಗಿ ಸ್ಕೇಲ್ ಮಾಡುತ್ತದೆ."
+    },
+    "code": ".headline {\n  /* min 2rem, scales with viewport, max 4.5rem */\n  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);\n  line-height: 1.05;\n}"
+  }
+]

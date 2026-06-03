@@ -1,0 +1,38 @@
+{
+  "name": "Christopher B Fernandes",
+  "initials": "CF",
+  "headline": {
+    "en": "Associate Architect — Full Stack & Data Engineering",
+    "hi": "एसोसिएट आर्किटेक्ट — फुल स्टैक और डेटा इंजीनियरिंग",
+    "kn": "ಅಸೋಸಿಯೇಟ್ ಆರ್ಕಿಟೆಕ್ಟ್ — ಫುಲ್ ಸ್ಟ್ಯಾಕ್ ಮತ್ತು ಡೇಟಾ ಎಂಜಿನಿಯರಿಂಗ್"
+  },
+  "tagline": {
+    "en": "11+ years building responsive, scalable web, mobile, and data platforms — now engineering high-throughput streaming pipelines behind a nationwide platform serving 1.5M+ users.",
+    "hi": "11+ वर्षों से उत्तरदायी, स्केलेबल वेब, मोबाइल और डेटा प्लेटफ़ॉर्म बनाना — अब 1.5M+ उपयोगकर्ताओं की राष्ट्रव्यापी सेवा देने वाली उच्च-थ्रूपुट स्ट्रीमिंग पाइपलाइनों का निर्माण।",
+    "kn": "11+ ವರ್ಷಗಳಿಂದ ಸ್ಪಂದನಶೀಲ, ಸ್ಕೇಲೆಬಲ್ ವೆಬ್, ಮೊಬೈಲ್ ಮತ್ತು ಡೇಟಾ ವೇದಿಕೆಗಳ ನಿರ್ಮಾಣ — ಈಗ 1.5M+ ಬಳಕೆದಾರರಿಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ ರಾಷ್ಟ್ರವ್ಯಾಪಿ ವೇದಿಕೆಯ ಹೈ-ಥ್ರೋಪುಟ್ ಸ್ಟ್ರೀಮಿಂಗ್ ಪೈಪ್‌ಲೈನ್‌ಗಳ ಎಂಜಿನಿಯರಿಂಗ್."
+  },
+  "status": {
+    "available": true,
+    "label": {
+      "en": "Open to architecture & data engineering conversations",
+      "hi": "आर्किटेक्चर और डेटा इंजीनियरिंग पर बातचीत के लिए उपलब्ध",
+      "kn": "ಆರ್ಕಿಟೆಕ್ಚರ್ ಮತ್ತು ಡೇಟಾ ಎಂಜಿನಿಯರಿಂಗ್ ಚರ್ಚೆಗಳಿಗೆ ಮುಕ್ತ"
+    }
+  },
+  "location": "Bengaluru, India",
+  "email": "christyabcd.05@gmail.com",
+  "phone": "+91 77953 17335",
+  "resumeUrl": "assets/Christopher_Fernandes_Resume.pdf",
+  "socials": [
+    { "platform": "GitHub", "url": "https://github.com/christyfernandes", "icon": "github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/christopher-fernandes-b490b8114/", "icon": "linkedin" },
+    { "platform": "Medium", "url": "https://medium.com/@your-handle", "icon": "medium" },
+    { "platform": "Email", "url": "mailto:christyabcd.05@gmail.com", "icon": "mail" }
+  ],
+  "skills": [
+    "Angular", "TypeScript", "RxJS", "Node.js", "Express",
+    "Apache Kafka", "Apache Flink", "Apache Druid", "PySpark",
+    "GCP", "Docker", "Kubernetes", "MongoDB", "Redis", "Cassandra",
+    "Tailwind CSS", "Ionic", "AI-Assisted Dev (Claude, Copilot)"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": { "en": "Home", "hi": "होम", "kn": "ಮುಖಪುಟ" },
+    "experience": { "en": "Experience", "hi": "अनुभव", "kn": "ಅನುಭವ" },
+    "projects": { "en": "Projects", "hi": "परियोजनाएँ", "kn": "ಯೋಜನೆಗಳು" },
+    "codeHacks": { "en": "Code Hacks", "hi": "कोड हैक्स", "kn": "ಕೋಡ್ ಹ್ಯಾಕ್ಸ್" },
+    "contact": { "en": "Contact", "hi": "संपर्क", "kn": "ಸಂಪರ್ಕ" }
+  },
+  "hero": {
+    "greeting": { "en": "Hello, I'm", "hi": "नमस्ते, मैं हूँ", "kn": "ನಮಸ್ಕಾರ, ನಾನು" },
+    "downloadResume": { "en": "Download Résumé", "hi": "रिज़्यूमे डाउनलोड करें", "kn": "ರೆಸ್ಯೂಮ್ ಡೌನ್‌ಲೋಡ್" },
+    "contactMe": { "en": "Contact Me", "hi": "संपर्क करें", "kn": "ಸಂಪರ್ಕಿಸಿ" }
+  },
+  "sections": {
+    "experienceTitle": { "en": "Work Life & Achievements", "hi": "कार्य जीवन और उपलब्धियाँ", "kn": "ವೃತ್ತಿಜೀವನ ಮತ್ತು ಸಾಧನೆಗಳು" },
+    "projectsTitle": { "en": "Project Showcase", "hi": "परियोजना प्रदर्शन", "kn": "ಯೋಜನಾ ಪ್ರದರ್ಶನ" },
+    "codeHacksTitle": { "en": "Code Hacks", "hi": "कोड हैक्स", "kn": "ಕೋಡ್ ಹ್ಯಾಕ್ಸ್" },
+    "codeHacksSubtitle": { "en": "Everyday snippets and engineering shortcuts.", "hi": "रोज़मर्रा के स्निपेट्स और इंजीनियरिंग शॉर्टकट।", "kn": "ದೈನಂದಿನ ಸ್ನಿಪೆಟ್‌ಗಳು ಮತ್ತು ಎಂಜಿನಿಯರಿಂಗ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು." },
+    "contactTitle": { "en": "Let's build something", "hi": "आइए कुछ बनाएँ", "kn": "ಏನಾದರೂ ನಿರ್ಮಿಸೋಣ" }
+  },
+  "codeHacks": {
+    "searchPlaceholder": { "en": "Search snippets…", "hi": "स्निपेट्स खोजें…", "kn": "ಸ್ನಿಪೆಟ್‌ಗಳನ್ನು ಹುಡುಕಿ…" },
+    "all": { "en": "All", "hi": "सभी", "kn": "ಎಲ್ಲಾ" },
+    "copy": { "en": "Copy", "hi": "कॉपी", "kn": "ನಕಲಿಸಿ" },
+    "copied": { "en": "Copied!", "hi": "कॉपी हो गया!", "kn": "ನಕಲಿಸಲಾಗಿದೆ!" },
+    "noResults": { "en": "No snippets match your search.", "hi": "आपकी खोज से कोई स्निपेट मेल नहीं खाता।", "kn": "ನಿಮ್ಮ ಹುಡುಕಾಟಕ್ಕೆ ಯಾವುದೇ ಸ್ನಿಪೆಟ್ ಹೊಂದಿಕೆಯಾಗಿಲ್ಲ." }
+  },
+  "contact": {
+    "intro": { "en": "Open to architecture, data engineering, and platform-scale conversations. The fastest way to reach me is email.", "hi": "आर्किटेक्चर, डेटा इंजीनियरिंग और प्लेटफ़ॉर्म-स्केल बातचीत के लिए उपलब्ध। मुझ तक पहुँचने का सबसे तेज़ तरीका ईमेल है।", "kn": "ಆರ್ಕಿಟೆಕ್ಚರ್, ಡೇಟಾ ಎಂಜಿನಿಯರಿಂಗ್ ಮತ್ತು ಪ್ಲಾಟ್‌ಫಾರ್ಮ್-ಸ್ಕೇಲ್ ಚರ್ಚೆಗಳಿಗೆ ಮುಕ್ತ. ನನ್ನನ್ನು ತಲುಪಲು ವೇಗದ ಮಾರ್ಗ ಇಮೇಲ್." },
+    "emailMe": { "en": "Email me", "hi": "मुझे ईमेल करें", "kn": "ನನಗೆ ಇಮೇಲ್ ಮಾಡಿ" }
+  },
+  "footer": {
+    "builtWith": { "en": "Built with Angular, Tailwind & signals. Data-driven, PWA-ready.", "hi": "Angular, Tailwind और signals के साथ बनाया गया। डेटा-संचालित, PWA-तैयार।", "kn": "Angular, Tailwind ಮತ್ತು signals ನೊಂದಿಗೆ ನಿರ್ಮಿಸಲಾಗಿದೆ. ಡೇಟಾ-ಚಾಲಿತ, PWA-ಸಿದ್ಧ." }
+  }
+}
