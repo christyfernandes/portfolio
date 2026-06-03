@@ -57,6 +57,9 @@ export interface Project {
   featured: boolean;
   period: string;
   description: LocalizedString;
+  myRole?: LocalizedString;
+  highlights?: LocalizedString[];
+  screenshots?: string[];
   tech: string[];
   repo: string;
   live: string;

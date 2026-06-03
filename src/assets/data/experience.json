@@ -11,25 +11,25 @@
     "period": "2024 — Present",
     "current": true,
     "summary": {
-      "en": "Promoted from Technology Lead to Associate Architect. Recently transitioned, by choice, from the Angular UI team into Data Engineering.",
-      "hi": "टेक्नोलॉजी लीड से एसोसिएट आर्किटेक्ट के रूप में पदोन्नत। हाल ही में स्वेच्छा से Angular UI टीम से डेटा इंजीनियरिंग में स्थानांतरित।",
-      "kn": "ಟೆಕ್ನಾಲಜಿ ಲೀಡ್‌ನಿಂದ ಅಸೋಸಿಯೇಟ್ ಆರ್ಕಿಟೆಕ್ಟ್‌ಗೆ ಬಡ್ತಿ. ಇತ್ತೀಚೆಗೆ ಸ್ವ-ಇಚ್ಛೆಯಿಂದ Angular UI ತಂಡದಿಂದ ಡೇಟಾ ಎಂಜಿನಿಯರಿಂಗ್‌ಗೆ ಬದಲಾವಣೆ."
+      "en": "Promoted from Technology Lead to Associate Architect. Transitioned, by choice, into Data Engineering to own the streaming telemetry layer.",
+      "hi": "टेक्नोलॉजी लीड से एसोसिएट आर्किटेक्ट के रूप में पदोन्नत। स्वेच्छा से डेटा इंजीनियरिंग में स्थानांतरित।",
+      "kn": "ಟೆಕ್ನಾಲಜಿ ಲೀಡ್‌ನಿಂದ ಅಸೋಸಿಯೇಟ್ ಆರ್ಕಿಟೆಕ್ಟ್‌ಗೆ ಬಡ್ತಿ. ಡೇಟಾ ಎಂಜಿನಿಯರಿಂಗ್‌ಗೆ ಸ್ಥಳಾಂತರ."
     },
     "highlights": [
       {
         "en": "Designing and optimizing high-throughput streaming data pipelines with **Kafka, Flink, Druid, and PySpark**.",
-        "hi": "**Kafka, Flink, Druid और PySpark** के साथ उच्च-थ्रूपुट स्ट्रीमिंग डेटा पाइपलाइनों का डिज़ाइन और अनुकूलन।",
-        "kn": "**Kafka, Flink, Druid ಮತ್ತು PySpark** ಬಳಸಿ ಹೈ-ಥ್ರೋಪುಟ್ ಸ್ಟ್ರೀಮಿಂಗ್ ಡೇಟಾ ಪೈಪ್‌ಲೈನ್‌ಗಳ ವಿನ್ಯಾಸ ಮತ್ತು ಆಪ್ಟಿಮೈಸೇಶನ್."
+        "hi": "**Kafka, Flink, Druid और PySpark** के साथ उच्च-थ्रूपुट स्ट्रीमिंग डेटा पाइपलाइनों का डिज़ाइन।",
+        "kn": "**Kafka, Flink, Druid ಮತ್ತು PySpark** ಬಳಸಿ ಹೈ-ಥ್ರೋಪುಟ್ ಸ್ಟ್ರೀಮಿಂಗ್ ಡೇಟಾ ಪೈಪ್‌ಲೈನ್‌ಗಳ ವಿನ್ಯಾಸ."
       },
       {
         "en": "Owning cross-team architecture and engineering quality across **frontend and data** layers.",
-        "hi": "**फ्रंटएंड और डेटा** परतों में क्रॉस-टीम आर्किटेक्चर और इंजीनियरिंग गुणवत्ता का स्वामित्व।",
-        "kn": "**ಫ್ರಂಟೆಂಡ್ ಮತ್ತು ಡೇಟಾ** ಪದರಗಳಲ್ಲಿ ಕ್ರಾಸ್-ತಂಡ ಆರ್ಕಿಟೆಕ್ಚರ್ ಮತ್ತು ಇಂಜಿನಿಯರಿಂಗ್ ಗುಣಮಟ್ಟದ ಮಾಲೀಕತ್ವ."
+        "hi": "**फ्रंटएंड और डेटा** परतों में क्रॉस-टीम आर्किटेक्चर का स्वामित्व।",
+        "kn": "**ಫ್ರಂಟೆಂಡ್ ಮತ್ತು ಡೇಟಾ** ಪದರಗಳಲ್ಲಿ ಆರ್ಕಿಟೆಕ್ಚರ್ ಮಾಲೀಕತ್ವ."
       },
       {
         "en": "Embedded **AI-assisted workflows (Claude, GitHub Copilot)** into daily development, automation, and documentation.",
-        "hi": "दैनिक विकास, स्वचालन और दस्तावेज़ीकरण में **AI-सहायता प्राप्त वर्कफ़्लो (Claude, GitHub Copilot)** को शामिल किया।",
-        "kn": "ದೈನಂದಿನ ಅಭಿವೃದ್ಧಿ, ಆಟೊಮೇಶನ್ ಮತ್ತು ದಾಖಲೆಗಳಲ್ಲಿ **AI-ಸಹಾಯಿತ ವರ್ಕ್‌ಫ್ಲೋಗಳು (Claude, GitHub Copilot)** ಅಳವಡಿಕೆ."
+        "hi": "दैनिक विकास में **AI-सहायता प्राप्त वर्कफ़्लो (Claude, GitHub Copilot)** को शामिल किया।",
+        "kn": "**AI-ಸಹಾಯಿತ ವರ್ಕ್‌ಫ್ಲೋಗಳು (Claude, GitHub Copilot)** ಅಳವಡಿಕೆ."
       }
     ],
     "tech": ["Kafka", "Flink", "Druid", "PySpark", "Angular", "Node.js", "GCP"]
@@ -43,30 +43,100 @@
     },
     "company": "Tarento Technologies Pvt. Ltd.",
     "location": "Bengaluru, India",
-    "period": "2014 — 2024",
+    "period": "2020 — 2024",
     "current": false,
     "summary": {
-      "en": "Led frontend architecture and full-stack integrations for large-scale national platforms, witnessing the company grow from ~160 to 800+ people.",
-      "hi": "बड़े पैमाने के राष्ट्रीय प्लेटफ़ॉर्म के लिए फ्रंटएंड आर्किटेक्चर और फुल-स्टैक एकीकरण का नेतृत्व किया; कंपनी को ~160 से 800+ लोगों तक बढ़ते देखा।",
-      "kn": "ದೊಡ್ಡ ಪ್ರಮಾಣದ ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಗಳಿಗಾಗಿ ಫ್ರಂಟೆಂಡ್ ಆರ್ಕಿಟೆಕ್ಚರ್ ಮತ್ತು ಫುಲ್-ಸ್ಟ್ಯಾಕ್ ಏಕೀಕರಣದ ನೇತೃತ್ವ; ಕಂಪನಿ ~160 ರಿಂದ 800+ ಜನರಿಗೆ ಬೆಳೆದದ್ದನ್ನು ಕಂಡೆ."
+      "en": "Led frontend architecture and full-stack integrations for large-scale national platforms. Scaled from individual contributor to leading a team of engineers.",
+      "hi": "बड़े पैमाने के राष्ट्रीय प्लेटफ़ॉर्म के लिए फ्रंटएंड आर्किटेक्चर और फुल-स्टैक एकीकरण का नेतृत्व किया।",
+      "kn": "ದೊಡ್ಡ ಪ್ರಮಾಣದ ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಗಳಿಗಾಗಿ ಫ್ರಂಟೆಂಡ್ ಆರ್ಕಿಟೆಕ್ಚರ್ ನೇತೃತ್ವ."
     },
     "highlights": [
       {
-        "en": "Architected modular Angular + Node.js platforms serving a **1.5M+ and growing** national userbase.",
-        "hi": "**1.5M+ और बढ़ते** राष्ट्रीय उपयोगकर्ता आधार की सेवा करने वाले मॉड्यूलर Angular + Node.js प्लेटफ़ॉर्म का निर्माण किया।",
-        "kn": "**1.5M+ ಮತ್ತು ಬೆಳೆಯುತ್ತಿರುವ** ರಾಷ್ಟ್ರೀಯ ಬಳಕೆದಾರ ನೆಲೆಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ ಮಾಡ್ಯುಲರ್ Angular + Node.js ವೇದಿಕೆಗಳ ವಿನ್ಯಾಸ."
-      },
-      {
-        "en": "Sustained **64 TPS** in production on a high-concurrency nationwide deployment.",
-        "hi": "उच्च-समवर्ती राष्ट्रव्यापी परिनियोजन पर उत्पादन में **64 TPS** बनाए रखा।",
-        "kn": "ಹೈ-ಕನ್‌ಕರೆನ್ಸಿ ರಾಷ್ಟ್ರವ್ಯಾಪಿ ನಿಯೋಜನೆಯಲ್ಲಿ ಉತ್ಪಾದನೆಯಲ್ಲಿ **64 TPS** ನಿರ್ವಹಣೆ."
+        "en": "Architected modular Angular + Node.js platforms serving a **1.5M+ and growing** national userbase at **64 TPS**.",
+        "hi": "**1.5M+ और बढ़ते** राष्ट्रीय उपयोगकर्ता आधार की सेवा करने वाले मॉड्यूलर Angular + Node.js प्लेटफ़ॉर्म का निर्माण।",
+        "kn": "**1.5M+ ಮತ್ತು ಬೆಳೆಯುತ್ತಿರುವ** ರಾಷ್ಟ್ರೀಯ ಬಳಕೆದಾರ ನೆಲೆಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ Angular + Node.js ವೇದಿಕೆಗಳ ವಿನ್ಯಾಸ."
       },
       {
         "en": "Mentored engineers and interns, drove code reviews, and built internal productivity tooling.",
-        "hi": "इंजीनियरों और प्रशिक्षुओं को सलाह दी, कोड समीक्षा को आगे बढ़ाया, और आंतरिक उत्पादकता टूलिंग बनाई।",
-        "kn": "ಇಂಜಿನಿಯರ್‌ಗಳಿಗೆ ಮತ್ತು ಇಂಟರ್ನ್‌ಗಳಿಗೆ ಮಾರ್ಗದರ್ಶನ, ಕೋಡ್ ರಿವ್ಯೂ ಮುನ್ನಡೆಸುವಿಕೆ, ಆಂತರಿಕ ಉತ್ಪಾದಕತಾ ಸಾಧನಗಳ ನಿರ್ಮಾಣ."
+        "hi": "इंजीनियरों को सलाह दी, कोड समीक्षा को आगे बढ़ाया, और आंतरिक उत्पादकता टूलिंग बनाई।",
+        "kn": "ಇಂಜಿನಿಯರ್‌ಗಳಿಗೆ ಮಾರ್ಗದರ್ಶನ ಮತ್ತು ಕೋಡ್ ರಿವ್ಯೂ ಮುನ್ನಡೆಸುವಿಕೆ."
+      },
+      {
+        "en": "Witnessed the company scale from **~160 to 800+ engineers** over a decade of growth.",
+        "hi": "कंपनी को **~160 से 800+ लोगों** तक बढ़ते देखा।",
+        "kn": "ಕಂಪನಿ **~160 ರಿಂದ 800+ ಜನರಿಗೆ** ಬೆಳೆದದ್ದನ್ನು ಕಂಡೆ."
       }
     ],
-    "tech": ["Angular", "TypeScript", "Node.js", "Ionic", "Docker", "GCP"]
+    "tech": ["Angular", "TypeScript", "Node.js", "Ionic", "Docker", "GCP", "MongoDB"]
+  },
+  {
+    "id": "tarento-se",
+    "role": {
+      "en": "Senior Software Engineer",
+      "hi": "वरिष्ठ सॉफ्टवेयर इंजीनियर",
+      "kn": "ಸೀನಿಯರ್ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್"
+    },
+    "company": "Tarento Technologies Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "2017 — 2020",
+    "current": false,
+    "summary": {
+      "en": "Grew into full ownership of client-facing feature delivery across multiple international and national projects, bridging design and engineering.",
+      "hi": "अंतरराष्ट्रीय और राष्ट्रीय परियोजनाओं में ग्राहक-सामना सुविधा वितरण का पूर्ण स्वामित्व।",
+      "kn": "ಅಂತರರಾಷ್ಟ್ರೀಯ ಮತ್ತು ರಾಷ್ಟ್ರೀಯ ಯೋಜನೆಗಳಲ್ಲಿ ಕ್ಲೈಂಟ್-ಫೇಸಿಂಗ್ ಡೆಲಿವರಿಯ ಮಾಲೀಕತ್ವ."
+    },
+    "highlights": [
+      {
+        "en": "Built Ionic-Angular hybrid apps for the **Sunbird / Ekstep** national education initiative.",
+        "hi": "**Sunbird / Ekstep** राष्ट्रीय शिक्षा पहल के लिए Ionic-Angular हाइब्रिड ऐप्स बनाए।",
+        "kn": "**Sunbird / Ekstep** ರಾಷ್ಟ್ರೀಯ ಶಿಕ್ಷಣ ಉಪಕ್ರಮಕ್ಕಾಗಿ Ionic-Angular ಹೈಬ್ರಿಡ್ ಆಪ್‌ಗಳ ನಿರ್ಮಾಣ."
+      },
+      {
+        "en": "Delivered end-to-end Angular frontends for healthcare platforms (HALO PHMT) and B2B SaaS products.",
+        "hi": "स्वास्थ्य प्लेटफ़ॉर्म (HALO PHMT) और B2B SaaS उत्पादों के लिए Angular फ्रंटएंड डिलीवरी।",
+        "kn": "ಆರೋಗ್ಯ ವೇದಿಕೆಗಳು (HALO PHMT) ಮತ್ತು B2B SaaS ಉತ್ಪನ್ನಗಳಿಗೆ Angular ಫ್ರಂಟೆಂಡ್ ಡೆಲಿವರಿ."
+      },
+      {
+        "en": "Introduced **RxJS-driven reactive state patterns** that became team standards for async data management.",
+        "hi": "**RxJS-चालित रिएक्टिव स्टेट पैटर्न** पेश किए जो async डेटा प्रबंधन के लिए टीम मानक बने।",
+        "kn": "**RxJS-ಚಾಲಿತ ರಿಯಾಕ್ಟಿವ್ ಸ್ಟೇಟ್ ಪ್ಯಾಟರ್ನ್‌ಗಳ** ಪರಿಚಯ."
+      }
+    ],
+    "tech": ["Angular", "Ionic", "RxJS", "Node.js", "TypeScript", "SASS"]
+  },
+  {
+    "id": "tarento-jr",
+    "role": {
+      "en": "Software Engineer",
+      "hi": "सॉफ्टवेयर इंजीनियर",
+      "kn": "ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಜಿನಿಯರ್"
+    },
+    "company": "Tarento Technologies Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "2014 — 2017",
+    "current": false,
+    "summary": {
+      "en": "Started career building AngularJS analytics portals, multi-tenant dashboards, and location-based tools for international clients.",
+      "hi": "AngularJS एनालिटिक्स पोर्टल, मल्टी-टेनेंट डैशबोर्ड और स्थान-आधारित टूल बनाकर करियर शुरू किया।",
+      "kn": "AngularJS ಅನಾಲಿಟಿಕ್ಸ್ ಪೋರ್ಟಲ್‌ಗಳು ಮತ್ತು ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗಳ ನಿರ್ಮಾಣದ ಮೂಲಕ ವೃತ್ತಿ ಆರಂಭ."
+    },
+    "highlights": [
+      {
+        "en": "Built **5+ client-facing web apps** with AngularJS, Google Maps API, and responsive CSS across analytics and fleet-tracking domains.",
+        "hi": "AngularJS, Google Maps API के साथ **5+ क्लाइंट-फेसिंग वेब ऐप्स** बनाए।",
+        "kn": "AngularJS, Google Maps API ಬಳಸಿ **5+ ಕ್ಲೈಂಟ್-ಫೇಸಿಂಗ್ ವೆಬ್ ಆಪ್‌ಗಳ** ನಿರ್ಮಾಣ."
+      },
+      {
+        "en": "Migrated legacy AngularJS codebases to modern Angular, improving performance and maintainability.",
+        "hi": "लेगेसी AngularJS कोडबेस को आधुनिक Angular में माइग्रेट किया।",
+        "kn": "ಲೆಗಸಿ AngularJS ಕೋಡ್‌ಬೇಸ್ ಅನ್ನು ಆಧುನಿಕ Angular ಗೆ ವಲಸೆ."
+      },
+      {
+        "en": "Integrated **Salesforce Chat and Umbraco CMS** for client applications requiring third-party platform embedding.",
+        "hi": "**Salesforce Chat और Umbraco CMS** को क्लाइंट अनुप्रयोगों में एकीकृत किया।",
+        "kn": "**Salesforce Chat ಮತ್ತು Umbraco CMS** ಏಕೀಕರಣ."
+      }
+    ],
+    "tech": ["AngularJS", "Angular", "JavaScript", "Google Maps API", "SASS", "Umbraco"]
   }
 ]

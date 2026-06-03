@@ -6,10 +6,38 @@
     "period": "2020 — Present",
     "description": {
       "en": "National-scale government learning platform serving a 1.5M+ and growing userbase. Modular Angular frontend, Node.js middleware, Dockerized microservices on GCP — now extended with a high-throughput telemetry and streaming data layer.",
-      "hi": "1.5M+ और बढ़ते उपयोगकर्ता आधार की सेवा करने वाला राष्ट्रीय स्तर का सरकारी लर्निंग प्लेटफ़ॉर्म। मॉड्यूलर Angular फ्रंटएंड, Node.js मिडलवेयर, GCP पर डॉकराइज़्ड माइक्रोसर्विसेज़ — अब उच्च-थ्रूपुट टेलीमेट्री और स्ट्रीमिंग डेटा परत के साथ विस्तारित।",
-      "kn": "1.5M+ ಮತ್ತು ಬೆಳೆಯುತ್ತಿರುವ ಬಳಕೆದಾರ ನೆಲೆಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ ರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದ ಸರ್ಕಾರಿ ಕಲಿಕಾ ವೇದಿಕೆ. ಮಾಡ್ಯುಲರ್ Angular ಫ್ರಂಟೆಂಡ್, Node.js ಮಿಡಲ್‌ವೇರ್, GCP ನಲ್ಲಿ ಡಾಕರೈಸ್ಡ್ ಮೈಕ್ರೋಸರ್ವಿಸ್‌ಗಳು — ಈಗ ಹೈ-ಥ್ರೋಪುಟ್ ಟೆಲಿಮೆಟ್ರಿ ಮತ್ತು ಸ್ಟ್ರೀಮಿಂಗ್ ಡೇಟಾ ಪದರದೊಂದಿಗೆ ವಿಸ್ತರಿಸಲಾಗಿದೆ."
+      "hi": "1.5M+ उपयोगकर्ता आधार की सेवा करने वाला राष्ट्रीय स्तर का सरकारी लर्निंग प्लेटफ़ॉर्म।",
+      "kn": "1.5M+ ಬಳಕೆದಾರ ನೆಲೆಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ ರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದ ಸರ್ಕಾರಿ ಕಲಿಕಾ ವೇದಿಕೆ."
     },
-    "tech": ["Angular", "Node.js", "Kafka", "Flink", "Druid", "PySpark", "Docker", "GCP"],
+    "myRole": {
+      "en": "Led the Angular frontend architecture across multiple micro-frontend modules, then transitioned to own the Kafka → Flink → Druid telemetry streaming pipeline for national-scale learning analytics.",
+      "hi": "Angular फ्रंटएंड आर्किटेक्चर का नेतृत्व किया, फिर Kafka → Flink → Druid टेलीमेट्री पाइपलाइन का स्वामित्व।",
+      "kn": "Angular ಫ್ರಂಟೆಂಡ್ ಆರ್ಕಿಟೆಕ್ಚರ್ ನೇತೃತ್ವ, ನಂತರ Kafka → Flink → Druid ಟೆಲಿಮೆಟ್ರಿ ಪೈಪ್‌ಲೈನ್ ಮಾಲೀಕತ್ವ."
+    },
+    "highlights": [
+      {
+        "en": "Architected a modular Angular micro-frontend shell serving 1.5M+ government employees with lazy-loaded feature modules.",
+        "hi": "1.5M+ सरकारी कर्मचारियों की सेवा करने वाले मॉड्यूलर Angular माइक्रो-फ्रंटएंड शेल का निर्माण।",
+        "kn": "1.5M+ ಸರ್ಕಾರಿ ನೌಕರರಿಗೆ ಸೇವೆ ಸಲ್ಲಿಸುವ Angular ಮೈಕ್ರೋ-ಫ್ರಂಟೆಂಡ್ ಶೆಲ್ ವಿನ್ಯಾಸ."
+      },
+      {
+        "en": "Designed Node.js middleware layer for API orchestration, caching, and session management across 10+ backend microservices.",
+        "hi": "10+ बैकएंड माइक्रोसर्विसेज के लिए Node.js मिडलवेयर का डिज़ाइन।",
+        "kn": "10+ ಬ್ಯಾಕೆಂಡ್ ಮೈಕ್ರೋಸರ್ವಿಸ್‌ಗಳಿಗೆ Node.js ಮಿಡಲ್‌ವೇರ್ ವಿನ್ಯಾಸ."
+      },
+      {
+        "en": "Engineered the Kafka → Flink → Druid streaming telemetry pipeline sustaining 64 TPS at peak nationwide load.",
+        "hi": "64 TPS पीक लोड पर Kafka → Flink → Druid स्ट्रीमिंग टेलीमेट्री पाइपलाइन का इंजीनियरिंग।",
+        "kn": "64 TPS ಪೀಕ್ ಲೋಡ್‌ನಲ್ಲಿ Kafka → Flink → Druid ಸ್ಟ್ರೀಮಿಂಗ್ ಟೆಲಿಮೆಟ್ರಿ ಪೈಪ್‌ಲೈನ್."
+      },
+      {
+        "en": "Containerized all services with Docker and deployed on GCP using Kubernetes for rolling updates with zero downtime.",
+        "hi": "Docker के साथ सभी सेवाओं को कंटेनरीकृत किया और GCP पर Kubernetes के साथ तैनात किया।",
+        "kn": "Docker ಬಳಸಿ ಎಲ್ಲ ಸೇವೆಗಳ ಕಂಟೈನರೈಸೇಶನ್ ಮತ್ತು GCP ನಲ್ಲಿ Kubernetes ಡಿಪ್ಲಾಯ್."
+      }
+    ],
+    "screenshots": [],
+    "tech": ["Angular", "Node.js", "Kafka", "Flink", "Druid", "PySpark", "Docker", "GCP", "Kubernetes"],
     "repo": "",
     "live": "https://igot.gov.in"
   },
@@ -20,10 +48,33 @@
     "period": "2018 — Present",
     "description": {
       "en": "Ionic-Angular hybrid apps for teachers and students with real-time content updates, RxJS-driven state, and API-based content delivery. Documented and helped optimize the Sunbird telemetry pipeline.",
-      "hi": "रीयल-टाइम कंटेंट अपडेट, RxJS-संचालित स्टेट और API-आधारित कंटेंट डिलीवरी के साथ शिक्षकों और छात्रों के लिए Ionic-Angular हाइब्रिड ऐप्स। Sunbird टेलीमेट्री पाइपलाइन का दस्तावेज़ीकरण और अनुकूलन।",
-      "kn": "ರಿಯಲ್-ಟೈಮ್ ವಿಷಯ ನವೀಕರಣ, RxJS-ಚಾಲಿತ ಸ್ಟೇಟ್ ಮತ್ತು API-ಆಧಾರಿತ ವಿಷಯ ವಿತರಣೆಯೊಂದಿಗೆ ಶಿಕ್ಷಕರು ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ Ionic-Angular ಹೈಬ್ರಿಡ್ ಆಪ್‌ಗಳು. Sunbird ಟೆಲಿಮೆಟ್ರಿ ಪೈಪ್‌ಲೈನ್ ದಾಖಲೀಕರಣ ಮತ್ತು ಆಪ್ಟಿಮೈಸೇಶನ್."
+      "hi": "रीयल-टाइम कंटेंट अपडेट के साथ शिक्षकों और छात्रों के लिए Ionic-Angular हाइब्रिड ऐप्स।",
+      "kn": "ರಿಯಲ್-ಟೈಮ್ ವಿಷಯ ನವೀಕರಣದೊಂದಿಗೆ ಶಿಕ್ಷಕರು ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ Ionic-Angular ಹೈಬ್ರಿಡ್ ಆಪ್‌ಗಳು."
     },
-    "tech": ["Ionic", "Angular", "RxJS", "Kafka"],
+    "myRole": {
+      "en": "Full-stack feature owner for the teacher and student apps — from Ionic component development to RxJS state management, API integration, and telemetry pipeline documentation.",
+      "hi": "शिक्षक और छात्र ऐप्स के लिए फुल-स्टैक फीचर ओनर।",
+      "kn": "ಶಿಕ್ಷಕ ಮತ್ತು ವಿದ್ಯಾರ್ಥಿ ಆಪ್‌ಗಳಿಗೆ ಫುಲ್-ಸ್ಟ್ಯಾಕ್ ಫೀಚರ್ ಓನರ್."
+    },
+    "highlights": [
+      {
+        "en": "Developed cross-platform Ionic-Angular apps targeting both browser and mobile (Android via Capacitor).",
+        "hi": "ब्राउज़र और मोबाइल दोनों के लिए क्रॉस-प्लेटफ़ॉर्म Ionic-Angular ऐप्स विकसित किए।",
+        "kn": "ಬ್ರೌಸರ್ ಮತ್ತು ಮೊಬೈಲ್ ಎರಡಕ್ಕೂ ಕ್ರಾಸ್-ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ Ionic-Angular ಆಪ್‌ಗಳ ಅಭಿವೃದ್ಧಿ."
+      },
+      {
+        "en": "Built RxJS-powered state management with streaming content APIs and offline-first caching for low-bandwidth regions.",
+        "hi": "कम बैंडविड्थ क्षेत्रों के लिए ऑफलाइन-फर्स्ट कैशिंग के साथ RxJS-संचालित स्टेट प्रबंधन।",
+        "kn": "ಕಡಿಮೆ ಬ್ಯಾಂಡ್‌ವಿಡ್ತ್ ಪ್ರದೇಶಗಳಿಗಾಗಿ ಆಫ್‌ಲೈನ್-ಫಸ್ಟ್ ಕ್ಯಾಶಿಂಗ್."
+      },
+      {
+        "en": "Authored telemetry SDK integration documentation adopted across the open-source Sunbird contributor community.",
+        "hi": "ओपन-सोर्स Sunbird समुदाय द्वारा अपनाई गई टेलीमेट्री SDK एकीकरण प्रलेखन लिखी।",
+        "kn": "ಟೆಲಿಮೆಟ್ರಿ SDK ಏಕೀಕರಣ ದಾಖಲೀಕರಣ ರಚನೆ."
+      }
+    ],
+    "screenshots": [],
+    "tech": ["Ionic", "Angular", "RxJS", "Kafka", "Capacitor"],
     "repo": "https://github.com/sunbird-knowlg",
     "live": ""
   },
@@ -34,10 +85,28 @@
     "period": "2018",
     "description": {
       "en": "Angular front-end with SASS and build optimisations; owned client communication and UI delivery end to end.",
-      "hi": "SASS और बिल्ड अनुकूलन के साथ Angular फ्रंट-एंड; क्लाइंट संचार और UI डिलीवरी का स्वामित्व।",
-      "kn": "SASS ಮತ್ತು ಬಿಲ್ಡ್ ಆಪ್ಟಿಮೈಸೇಶನ್‌ಗಳೊಂದಿಗೆ Angular ಫ್ರಂಟ್-ಎಂಡ್; ಕ್ಲೈಂಟ್ ಸಂವಹನ ಮತ್ತು UI ವಿತರಣೆಯ ಮಾಲೀಕತ್ವ."
+      "hi": "SASS और बिल्ड अनुकूलन के साथ Angular फ्रंट-एंड।",
+      "kn": "SASS ಮತ್ತು ಬಿಲ್ಡ್ ಆಪ್ಟಿಮೈಸೇಶನ್‌ಗಳೊಂದಿಗೆ Angular ಫ್ರಂಟ್-ಎಂಡ್."
     },
-    "tech": ["Angular", "SASS"],
+    "myRole": {
+      "en": "Sole frontend engineer — owned all UI development, SASS architecture, build pipeline configuration, and direct client communication.",
+      "hi": "एकमात्र फ्रंटएंड इंजीनियर — सभी UI विकास का स्वामित्व।",
+      "kn": "ಏಕಮಾತ್ರ ಫ್ರಂಟೆಂಡ್ ಇಂಜಿನಿಯರ್ — ಎಲ್ಲ UI ಅಭಿವೃದ್ಧಿಯ ಮಾಲೀಕತ್ವ."
+    },
+    "highlights": [
+      {
+        "en": "Delivered a responsive Angular SPA with SASS-based design system and performance-optimised Webpack build.",
+        "hi": "SASS-आधारित डिज़ाइन सिस्टम के साथ रिस्पॉन्सिव Angular SPA डिलीवर किया।",
+        "kn": "SASS-ಆಧಾರಿತ ಡಿಸೈನ್ ಸಿಸ್ಟಮ್‌ನೊಂದಿಗೆ ರೆಸ್ಪಾನ್ಸಿವ್ Angular SPA ಡೆಲಿವರಿ."
+      },
+      {
+        "en": "Managed all client touchpoints from requirement discussions to acceptance testing.",
+        "hi": "आवश्यकता चर्चाओं से स्वीकृति परीक्षण तक सभी क्लाइंट संपर्क प्रबंधित किए।",
+        "kn": "ಅವಶ್ಯಕತೆ ಚರ್ಚೆಗಳಿಂದ ಅಂಗೀಕಾರ ಪರೀಕ್ಷೆಯವರೆಗೆ ಕ್ಲೈಂಟ್ ಸಂಪರ್ಕ ನಿರ್ವಹಣೆ."
+      }
+    ],
+    "screenshots": [],
+    "tech": ["Angular", "SASS", "Webpack"],
     "repo": "",
     "live": ""
   },
@@ -48,10 +117,28 @@
     "period": "2017 — 2018",
     "description": {
       "en": "Patient survey module in Angular with interactive canvas features and dynamic organisation onboarding.",
-      "hi": "इंटरैक्टिव कैनवास सुविधाओं और गतिशील संगठन ऑनबोर्डिंग के साथ Angular में रोगी सर्वेक्षण मॉड्यूल।",
-      "kn": "ಇಂಟರ್‌ಆಕ್ಟಿವ್ ಕ್ಯಾನ್ವಾಸ್ ವೈಶಿಷ್ಟ್ಯಗಳು ಮತ್ತು ಡೈನಾಮಿಕ್ ಸಂಸ್ಥೆ ಆನ್‌ಬೋರ್ಡಿಂಗ್‌ನೊಂದಿಗೆ Angular ನಲ್ಲಿ ರೋಗಿ ಸಮೀಕ್ಷೆ ಮಾಡ್ಯೂಲ್."
+      "hi": "इंटरैक्टिव कैनवास सुविधाओं के साथ Angular में रोगी सर्वेक्षण मॉड्यूल।",
+      "kn": "ಇಂಟರ್‌ಆಕ್ಟಿವ್ ಕ್ಯಾನ್ವಾಸ್ ವೈಶಿಷ್ಟ್ಯಗಳೊಂದಿಗೆ Angular ನಲ್ಲಿ ರೋಗಿ ಸಮೀಕ್ಷೆ ಮಾಡ್ಯೂಲ್."
     },
-    "tech": ["Angular", "Canvas"],
+    "myRole": {
+      "en": "Frontend engineer responsible for the Angular survey module, interactive HTML5 Canvas components, and dynamic multi-tenant organisation onboarding flows.",
+      "hi": "Angular सर्वे मॉड्यूल और इंटरैक्टिव Canvas घटकों के लिए फ्रंटएंड इंजीनियर।",
+      "kn": "Angular ಸರ್ವೇ ಮಾಡ್ಯೂಲ್ ಮತ್ತು ಇಂಟರ್‌ಆಕ್ಟಿವ್ Canvas ಘಟಕಗಳಿಗಾಗಿ ಫ್ರಂಟೆಂಡ್ ಇಂಜಿನಿಯರ್."
+    },
+    "highlights": [
+      {
+        "en": "Built interactive HTML5 Canvas-based survey UI with dynamic form generation from JSON configuration.",
+        "hi": "JSON कॉन्फ़िगरेशन से डायनामिक फॉर्म जनरेशन के साथ HTML5 Canvas-आधारित सर्वे UI बनाया।",
+        "kn": "JSON ಕಾನ್ಫಿಗರೇಶನ್‌ನಿಂದ ಡೈನಾಮಿಕ್ ಫಾರ್ಮ್ ಜನರೇಶನ್‌ನೊಂದಿಗೆ HTML5 Canvas-ಆಧಾರಿತ ಸರ್ವೇ UI."
+      },
+      {
+        "en": "Implemented dynamic multi-tenant onboarding so new organisations could self-configure survey templates.",
+        "hi": "डायनामिक मल्टी-टेनेंट ऑनबोर्डिंग लागू किया।",
+        "kn": "ಡೈನಾಮಿಕ್ ಮಲ್ಟಿ-ಟೆನೆಂಟ್ ಆನ್‌ಬೋರ್ಡಿಂಗ್ ಅಳವಡಿಕೆ."
+      }
+    ],
+    "screenshots": [],
+    "tech": ["Angular", "HTML5 Canvas", "TypeScript"],
     "repo": "",
     "live": ""
   },
@@ -62,10 +149,28 @@
     "period": "2017",
     "description": {
       "en": "Responsive Umbraco CMS web app integrated with Salesforce chat for anonymous health consultations.",
-      "hi": "गुमनाम स्वास्थ्य परामर्श के लिए Salesforce चैट के साथ एकीकृत उत्तरदायी Umbraco CMS वेब ऐप।",
-      "kn": "ಅನಾಮಧೇಯ ಆರೋಗ್ಯ ಸಮಾಲೋಚನೆಗಳಿಗಾಗಿ Salesforce ಚಾಟ್‌ನೊಂದಿಗೆ ಸಂಯೋಜಿತ ಸ್ಪಂದನಶೀಲ Umbraco CMS ವೆಬ್ ಆಪ್."
+      "hi": "गुमनाम स्वास्थ्य परामर्श के लिए Salesforce चैट के साथ एकीकृत Umbraco CMS वेब ऐप।",
+      "kn": "ಅನಾಮಧೇಯ ಆರೋಗ್ಯ ಸಮಾಲೋಚನೆಗಳಿಗಾಗಿ Salesforce ಚಾಟ್‌ನೊಂದಿಗೆ Umbraco CMS ವೆಬ್ ಆಪ್."
     },
-    "tech": ["Umbraco", "Salesforce", "JavaScript"],
+    "myRole": {
+      "en": "Frontend integration engineer — responsible for the Umbraco CMS front-end, embedded Salesforce Live Agent chat widget, and responsive mobile-first CSS.",
+      "hi": "Umbraco CMS फ्रंट-एंड और Salesforce चैट विजेट के लिए फ्रंटएंड इंटीग्रेशन इंजीनियर।",
+      "kn": "Umbraco CMS ಫ್ರಂಟ್-ಎಂಡ್ ಮತ್ತು Salesforce ಚಾಟ್ ವಿಜೆಟ್‌ಗೆ ಫ್ರಂಟೆಂಡ್ ಇಂಟಿಗ್ರೇಶನ್ ಇಂಜಿನಿಯರ್."
+    },
+    "highlights": [
+      {
+        "en": "Embedded Salesforce Live Agent chat to enable anonymous, identity-safe health consultations at scale.",
+        "hi": "स्केल पर गुमनाम स्वास्थ्य परामर्श के लिए Salesforce Live Agent चैट एम्बेड किया।",
+        "kn": "ಸ್ಕೇಲ್‌ನಲ್ಲಿ ಅನಾಮಧೇಯ ಆರೋಗ್ಯ ಸಮಾಲೋಚನೆಗಳಿಗೆ Salesforce Live Agent ಚಾಟ್ ಎಂಬೆಡ್."
+      },
+      {
+        "en": "Delivered fully responsive CSS-only layouts optimised for mobile users across South Asian markets.",
+        "hi": "मोबाइल उपयोगकर्ताओं के लिए पूरी तरह से रिस्पॉन्सिव CSS-ओनली लेआउट डिलीवर किए।",
+        "kn": "ಮೊಬೈಲ್ ಬಳಕೆದಾರರಿಗೆ ಸಂಪೂರ್ಣ ರೆಸ್ಪಾನ್ಸಿವ್ CSS-ಓನ್ಲಿ ಲೇಔಟ್."
+      }
+    ],
+    "screenshots": [],
+    "tech": ["Umbraco", "Salesforce", "JavaScript", "CSS"],
     "repo": "",
     "live": ""
   },
@@ -76,10 +181,33 @@
     "period": "2015 — 2017",
     "description": {
       "en": "AngularJS analytics portals, multi-tenant asset dashboards, location-based survey tools, live fleet-tracking UIs, and an internal time-tracking system — many with Google Maps integration.",
-      "hi": "AngularJS एनालिटिक्स पोर्टल, मल्टी-टेनेंट एसेट डैशबोर्ड, स्थान-आधारित सर्वेक्षण उपकरण, लाइव फ्लीट-ट्रैकिंग UI, और एक आंतरिक समय-ट्रैकिंग प्रणाली — कई Google Maps एकीकरण के साथ।",
-      "kn": "AngularJS ಅನಾಲಿಟಿಕ್ಸ್ ಪೋರ್ಟಲ್‌ಗಳು, ಮಲ್ಟಿ-ಟೆನೆಂಟ್ ಆಸ್ತಿ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್‌ಗಳು, ಸ್ಥಳ-ಆಧಾರಿತ ಸಮೀಕ್ಷೆ ಸಾಧನಗಳು, ಲೈವ್ ಫ್ಲೀಟ್-ಟ್ರ್ಯಾಕಿಂಗ್ UI ಗಳು ಮತ್ತು ಆಂತರಿಕ ಸಮಯ-ಟ್ರ್ಯಾಕಿಂಗ್ ವ್ಯವಸ್ಥೆ — ಹಲವು Google Maps ಏಕೀಕರಣದೊಂದಿಗೆ."
+      "hi": "AngularJS एनालिटिक्स पोर्टल, मल्टी-टेनेंट एसेट डैशबोर्ड, और लाइव फ्लीट-ट्रैकिंग UI।",
+      "kn": "AngularJS ಅನಾಲಿಟಿಕ್ಸ್ ಪೋರ್ಟಲ್‌ಗಳು ಮತ್ತು ಲೈವ್ ಫ್ಲೀಟ್-ಟ್ರ್ಯಾಕಿಂಗ್ UI ಗಳು."
     },
-    "tech": ["AngularJS", "Google Maps API"],
+    "myRole": {
+      "en": "Frontend developer and sole engineer across multiple concurrent client projects, handling everything from UI build to deployment on each engagement.",
+      "hi": "एकाधिक समवर्ती क्लाइंट प्रोजेक्ट्स में फ्रंटएंड डेवलपर।",
+      "kn": "ಬಹು ಏಕೀಕೃತ ಕ್ಲೈಂಟ್ ಯೋಜನೆಗಳಲ್ಲಿ ಫ್ರಂಟೆಂಡ್ ಡೆವಲಪರ್."
+    },
+    "highlights": [
+      {
+        "en": "Built **Viomba** — a multi-tenant analytics portal with real-time chart dashboards using AngularJS and D3-style charting.",
+        "hi": "**Viomba** — AngularJS और D3-शैली चार्टिंग के साथ मल्टी-टेनेंट एनालिटिक्स पोर्टल।",
+        "kn": "**Viomba** — AngularJS ಮತ್ತು D3-ಶೈಲಿ ಚಾರ್ಟಿಂಗ್‌ನೊಂದಿಗೆ ಮಲ್ಟಿ-ಟೆನೆಂಟ್ ಅನಾಲಿಟಿಕ್ಸ್ ಪೋರ್ಟಲ್."
+      },
+      {
+        "en": "Built **Lithium** — a live GPS fleet-tracking UI with real-time vehicle positions on Google Maps.",
+        "hi": "**Lithium** — Google Maps पर रीयल-टाइम वाहन स्थिति के साथ लाइव GPS फ्लीट-ट्रैकिंग UI।",
+        "kn": "**Lithium** — Google Maps ನಲ್ಲಿ ರಿಯಲ್-ಟೈಮ್ ವಾಹನ ಸ್ಥಾನಗಳೊಂದಿಗೆ ಲೈವ್ GPS ಫ್ಲೀಟ್-ಟ್ರ್ಯಾಕಿಂಗ್."
+      },
+      {
+        "en": "Built **Kronos** — an internal employee time-tracking and project allocation system used across Tarento teams.",
+        "hi": "**Kronos** — Tarento टीमों में उपयोग किया जाने वाला आंतरिक समय-ट्रैकिंग सिस्टम।",
+        "kn": "**Kronos** — Tarento ತಂಡಗಳಲ್ಲಿ ಬಳಸಲಾದ ಆಂತರಿಕ ಸಮಯ-ಟ್ರ್ಯಾಕಿಂಗ್ ವ್ಯವಸ್ಥೆ."
+      }
+    ],
+    "screenshots": [],
+    "tech": ["AngularJS", "Google Maps API", "JavaScript", "D3.js"],
     "repo": "",
     "live": ""
   }

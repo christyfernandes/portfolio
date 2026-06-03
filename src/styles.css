@@ -99,6 +99,15 @@ html[data-theme='light'] {
   .bg-grad {
     background: var(--grad);
   }
+  /* Proper gradient text — works on webkit and modern browsers */
+  .grad-text {
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+  }
 }
 
 /* pulsing status dot */
@@ -117,6 +126,22 @@ html[data-theme='light'] {
     transform: scale(2.4);
     opacity: 0;
   }
+}
+
+/* Project detail panel */
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes backdrop-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.panel-backdrop {
+  animation: backdrop-fade-in 0.25s ease;
+}
+.panel-sheet {
+  animation: slide-in-right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* syntax highlight tokens */
