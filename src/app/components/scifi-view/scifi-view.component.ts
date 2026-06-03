@@ -1,6 +1,8 @@
 import {
   Component,
   inject,
+  signal,
+  effect,
   AfterViewInit,
   OnDestroy,
   ElementRef,
@@ -78,8 +80,36 @@ const HOT = new Set([
               <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
             </svg>
           </button>
+
+          <!-- Hamburger — mobile only -->
+          <button
+            type="button"
+            (click)="sfMenuOpen = !sfMenuOpen"
+            aria-label="Toggle navigation"
+            class="hud-burger"
+          >
+            @if (sfMenuOpen) {
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M18 6L6 18M6 6l12 12"/>
+              </svg>
+            } @else {
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            }
+          </button>
         </div>
       </div>
+
+      <!-- Mobile nav dropdown -->
+      @if (sfMenuOpen) {
+        <div class="sf-mobile-nav">
+          <a href="#sf-home"     class="sf-mobile-link" (click)="sfMenuOpen = false">HOME</a>
+          <a href="#sf-exp"      class="sf-mobile-link" (click)="sfMenuOpen = false">EXPERIENCE</a>
+          <a href="#sf-projects" class="sf-mobile-link" (click)="sfMenuOpen = false">PROJECTS</a>
+          <a href="#sf-contact"  class="sf-mobile-link" (click)="sfMenuOpen = false">CONTACT</a>
+        </div>
+      }
     </header>
 
     <!-- ── Main content ────────────────────────────── -->
@@ -104,8 +134,8 @@ const HOT = new Set([
             <div class="hero-eyebrow">SYSTEM.IDENTIFY</div>
 
             <h1 class="hero-name">
-              <span class="name-first">{{ firstName(p.name) }}</span>
-              <span class="name-last">{{ lastName(p.name) }}</span>
+              <span class="name-first">{{ sfDisplayFirst() }}<span class="sf-cursor" [style.visibility]="sfPhase() === 'first' ? 'visible' : 'hidden'">|</span></span>
+              <span class="name-last">{{ sfDisplayLast() }}<span class="sf-cursor sf-cursor-grad" [style.visibility]="sfPhase() === 'last' ? 'visible' : 'hidden'">|</span></span>
             </h1>
 
             <p class="hero-headline">{{ p.headline | localize }}</p>
@@ -398,6 +428,54 @@ const HOT = new Set([
       box-shadow: 0 0 14px rgba(0, 212, 255, 0.18);
       color: #00d4ff;
     }
+    /* Hamburger — mobile only */
+    .hud-burger {
+      display: none;
+      width: 34px; height: 34px;
+      place-items: center;
+      border-radius: 8px;
+      border: 1px solid rgba(0,212,255,0.18);
+      background: rgba(0,212,255,0.04);
+      color: rgba(0,212,255,0.7);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    @media (max-width: 767px) { .hud-burger { display: grid; } }
+    .hud-burger:hover {
+      border-color: rgba(0,212,255,0.45);
+      background: rgba(0,212,255,0.1);
+      color: #00d4ff;
+    }
+    /* Mobile nav panel */
+    .sf-mobile-nav {
+      border-top: 1px solid rgba(0,212,255,0.1);
+      background: rgba(0,4,18,0.9);
+      padding: 8px 16px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      animation: mobile-nav-in 0.18s ease forwards;
+    }
+    @keyframes mobile-nav-in {
+      from { opacity: 0; transform: translateY(-6px); }
+      to   { opacity: 1; transform: none; }
+    }
+    .sf-mobile-link {
+      padding: 10px 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: rgba(150,190,240,0.55);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.18s;
+    }
+    .sf-mobile-link:hover {
+      color: #00d4ff;
+      background: rgba(0,212,255,0.06);
+      text-shadow: 0 0 10px rgba(0,212,255,0.4);
+    }
 
     /* ─── Main wrapper ───────────────────────────── */
     .sf-main { position: relative; z-index: 2; padding-top: 56px; }
@@ -504,6 +582,20 @@ const HOT = new Set([
       background-clip: text;
       -webkit-text-fill-color: transparent;
       filter: drop-shadow(0 0 28px rgba(0,212,255,0.25));
+    }
+    /* Typewriter cursor */
+    .sf-cursor {
+      display: inline-block;
+      font-weight: 200;
+      color: #00d4ff;
+      -webkit-text-fill-color: #00d4ff;
+      animation: sf-blink 0.65s step-end infinite;
+      margin-left: 2px;
+    }
+    .sf-cursor-grad { color: #00d4ff; -webkit-text-fill-color: #00d4ff; }
+    @keyframes sf-blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
     }
     .hero-headline {
       font-size: clamp(1rem, 2.4vw, 1.35rem);
@@ -958,9 +1050,29 @@ export class ScifiViewComponent implements AfterViewInit, OnDestroy {
 
   @ViewChild('bgCanvas') canvasRef!: ElementRef<HTMLCanvasElement>;
 
+  sfMenuOpen = false;
+
+  /* Typewriter signals */
+  sfDisplayFirst = signal('');
+  sfDisplayLast  = signal('');
+  sfPhase        = signal<'first' | 'last' | 'done'>('first');
+
   private rafId = 0;
   private particles: Particle[] = [];
   private resizeHandler = (): void => this.resizeCanvas();
+  private _sfAnimated = false;
+  private typeTimer?: ReturnType<typeof setTimeout>;
+
+  constructor() {
+    // Same pattern as HeroComponent — profile arrives async inside @if,
+    // so we react via effect() rather than ViewChild + ngAfterViewInit.
+    effect(() => {
+      const profile = this.svc.profile();
+      if (!profile || this._sfAnimated) return;
+      this._sfAnimated = true;
+      requestAnimationFrame(() => this.runSfTypewriter(profile.name));
+    });
+  }
 
   ngAfterViewInit(): void {
     this.resizeCanvas();
@@ -972,11 +1084,38 @@ export class ScifiViewComponent implements AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     cancelAnimationFrame(this.rafId);
     window.removeEventListener('resize', this.resizeHandler);
+    if (this.typeTimer) clearTimeout(this.typeTimer);
   }
 
   isHot = (s: string): boolean => HOT.has(s);
   firstName = (n: string): string => n.split(' ')[0];
   lastName = (n: string): string => n.split(' ').slice(1).join(' ');
+
+  private runSfTypewriter(name: string): void {
+    const first = name.split(' ')[0];
+    const last  = name.split(' ').slice(1).join(' ');
+    const ms    = 52;
+    const total = first.length + 1 + last.length;
+    let i = 0;
+
+    const tick = () => {
+      if (i <= first.length) {
+        this.sfDisplayFirst.set(first.slice(0, i));
+        this.sfPhase.set('first');
+      } else {
+        this.sfDisplayFirst.set(first);
+        const li = i - first.length - 1;
+        this.sfDisplayLast.set(last.slice(0, li));
+        this.sfPhase.set(li >= last.length ? 'done' : 'last');
+      }
+      if (i < total) {
+        const delay = i === first.length ? 200 : ms;
+        i++;
+        this.typeTimer = setTimeout(tick, delay);
+      }
+    };
+    this.typeTimer = setTimeout(tick, 350);
+  }
 
   private resizeCanvas(): void {
     const c = this.canvasRef?.nativeElement;

@@ -150,6 +150,24 @@ html[data-theme='light'] {
 .tk-com { color: #5d6f93; font-style: italic; }
 .tk-num { color: #f0a868; }
 
+/* Section components default to block layout */
+app-timeline, app-projects, app-code-hacks, app-contact { display: block; }
+
+/* ── Global scroll reveal ─────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible { opacity: 1; transform: none; }
+
+/* Mobile nav slide-in */
+@keyframes mobile-nav-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: none; }
+}
+.mobile-nav-open { animation: mobile-nav-in 0.18s ease forwards; }
+
 /* View-mode toggle button — pulsing neon glow to draw attention */
 @keyframes view-mode-glow {
   0%, 100% {
