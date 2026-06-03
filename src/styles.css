@@ -149,3 +149,21 @@ html[data-theme='light'] {
 .tk-str { color: #2dd4bf; }
 .tk-com { color: #5d6f93; font-style: italic; }
 .tk-num { color: #f0a868; }
+
+/* View-mode toggle button — pulsing neon glow to draw attention */
+@keyframes view-mode-glow {
+  0%, 100% {
+    border-color: var(--border);
+    box-shadow: none;
+    color: var(--muted);
+  }
+  50% {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--teal) 18%, transparent),
+                0 0 14px color-mix(in srgb, var(--teal) 35%, transparent);
+    color: var(--teal);
+  }
+}
+.btn-view-mode {
+  animation: view-mode-glow 2s ease-in-out infinite;
+}

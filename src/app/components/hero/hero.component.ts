@@ -81,7 +81,7 @@ const HOT = new Set([
           <div class="hidden lg:flex lg:justify-center">
             <div class="portrait-blob">
               <img
-                src="assets/images/profile.svg"
+                src="assets/images/profile.HEIC"
                 alt="Christopher Fernandes — portrait placeholder"
                 class="portrait-img"
               >

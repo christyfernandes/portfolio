@@ -34,5 +34,6 @@
     "Apache Kafka", "Apache Flink", "Apache Druid", "PySpark",
     "GCP", "Docker", "Kubernetes", "MongoDB", "Redis", "Cassandra",
     "Tailwind CSS", "Ionic", "AI-Assisted Dev (Claude, Copilot)"
-  ]
+  ],
+  "defaultView": "classic"
 }

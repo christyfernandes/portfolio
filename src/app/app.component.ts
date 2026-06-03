@@ -7,6 +7,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CodeHacksComponent } from './components/code-hacks/code-hacks.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ScifiViewComponent } from './components/scifi-view/scifi-view.component';
 
 @Component({
   selector: 'app-root',
@@ -19,21 +20,26 @@ import { ContactComponent } from './components/contact/contact.component';
     ProjectsComponent,
     CodeHacksComponent,
     ContactComponent,
+    ScifiViewComponent,
   ],
   template: `
-    <app-navbar />
-    <app-social-links />
-    <main class="relative z-[1]">
-      <app-hero />
-      <app-timeline />
-      <app-projects />
-      <app-code-hacks />
-      <app-contact />
-    </main>
+    @if (svc.viewMode() === 'scifi') {
+      <app-scifi-view />
+    } @else {
+      <app-navbar />
+      <app-social-links />
+      <main class="relative z-[1]">
+        <app-hero />
+        <app-timeline />
+        <app-projects />
+        <app-code-hacks />
+        <app-contact />
+      </main>
+    }
   `,
 })
 export class AppComponent implements OnInit {
-  private svc = inject(PortfolioService);
+  svc = inject(PortfolioService);
 
   ngOnInit(): void {
     this.svc.load();

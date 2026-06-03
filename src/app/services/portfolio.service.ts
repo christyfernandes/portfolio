@@ -14,6 +14,7 @@ import {
 
 const THEME_KEY = 'cf.theme';
 const LOCALE_KEY = 'cf.locale';
+const VIEW_KEY = 'cf.view';
 
 /**
  * Single source of truth for the app.
@@ -30,6 +31,11 @@ export class PortfolioService {
 
   /** ----- Theme ----- */
   readonly theme = signal<Theme>(this.resolveInitialTheme());
+
+  /** ----- View Mode ----- */
+  readonly viewMode = signal<'classic' | 'scifi'>(this.resolveInitialView());
+  /** True when the view was loaded from localStorage (user has an explicit preference). */
+  private _viewFromStorage = false;
 
   /** ----- Locale ----- */
   readonly locale = signal<Locale>(this.resolveInitialLocale());
@@ -74,11 +80,26 @@ export class PortfolioService {
       projects: this.http.get<Project[]>('assets/data/projects.json'),
       snippets: this.http.get<Snippet[]>('assets/data/snippets.json'),
       ui: this.http.get<UiStrings>('assets/data/ui.json'),
-    }).subscribe((payload) => this.data.set(payload));
+    }).subscribe((payload) => {
+      this.data.set(payload);
+      // Apply JSON-configured default only for first-time visitors (no stored preference).
+      if (!this._viewFromStorage) {
+        const preferred = payload.profile.defaultView ?? 'classic';
+        this.viewMode.set(preferred);
+      }
+    });
   }
 
   toggleTheme(): void {
     this.theme.update((t) => (t === 'dark' ? 'light' : 'dark'));
+  }
+
+  toggleViewMode(): void {
+    this.viewMode.update((m) => {
+      const next = m === 'classic' ? 'scifi' : 'classic';
+      try { localStorage.setItem(VIEW_KEY, next); } catch {}
+      return next;
+    });
   }
 
   setLocale(locale: Locale): void {
@@ -86,6 +107,17 @@ export class PortfolioService {
   }
 
   // -------- initial state resolution --------
+
+  private resolveInitialView(): 'classic' | 'scifi' {
+    try {
+      const saved = localStorage.getItem(VIEW_KEY);
+      if (saved === 'scifi' || saved === 'classic') {
+        this._viewFromStorage = true;
+        return saved;
+      }
+    } catch {}
+    return 'classic';
+  }
 
   private resolveInitialTheme(): Theme {
     try {

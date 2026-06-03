@@ -36,6 +36,8 @@ export interface Profile {
   resumeUrl: string;
   socials: SocialLink[];
   skills: string[];
+  /** Which view loads for first-time visitors (no localStorage preference). */
+  defaultView?: 'classic' | 'scifi';
 }
 
 export interface ExperienceItem {
